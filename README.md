@@ -1,2 +1,2 @@
 # genius-test
-Сучасна пекарня SHOPBAKERY
+Сучасна пекарня "SHOPBAKERY"
