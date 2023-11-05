@@ -5,52 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="">
+        <a href="/index.html">
           <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
         </a>
         <ul>
           <li>
-            <a href="#">Наші традиції</a>
+            <a class="menu-link" href="#traditions-section">Наші традиції</a>
           </li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="menu-link" href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a class="menu-link" href="#formats-section">Формати</a></li>
+          <li><a class="menu-link" href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
+      <button class="button" type="button">Замовити дзвінок</button>
     </header>
+
     <main>
       <!-- основне тіло сайту -->
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
       </section>
-      <section>
-        <ul>
+      <section id="traditions-section">
+        <ul class="advantages-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h2>Новий формат традицій</h2>
-        <p>
-          <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
-          зберегла смак традиційної випічки та натуральність інгредієнтів.
+        <h2 class="section-title">Новий формат традицій</h2>
+        <p class="tradition-text">
+          <span class="accent-caps">shop bakery</span> — це пекарня, яка взяла
+          все найкраще, і зберегла смак традиційної випічки та натуральність
+          інгредієнтів.
         </p>
-        <p>
+        <p class="tradition-text">
           Ми працюємо як найвідоміші мережі —
-          <span>5 хвилин і замовлення готове.</span>
+          <span class="accent">5 хвилин і замовлення готове.</span>
           А ще у наших пекарень стильний дизайн та висока якість обслуговування!
         </p>
         <img src="./images/baker-man.jpg" alt="Пекар з батонами" />
       </section>
-      <section>
-        <h2>Найкращі шеф-кухарі</h2>
+      <section id="chefs-section">
+        <h2 class="section-title">
+          Наші найкращі <span class="accent-chefs">шеф-кухарі</span>
+        </h2>
         <ul>
           <li>
             <article>
+              <img src="/images/nastya.jpg" alt="Шеф Настя" />
               <h3>Настя</h3>
               <p>Привіт, я Настя!</p>
               <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
@@ -59,6 +72,7 @@
           </li>
           <li>
             <article>
+              <img src="./images/vlad.jpg" alt="Шеф Влад" />
               <h3>Влад</h3>
               <p>Привіт, я Влад!</p>
               <p>
@@ -70,8 +84,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Формати</h2>
+      <section id="formats-section">
+        <h2 class="section-title">Формати</h2>
         <ul>
           <li>
             <article>
@@ -90,9 +104,18 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Приєднуйся до мережі пекарень</h2>
+      <section id="contacts-section">
+        <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.0848195253566!2d30.477735799999994!3d50.45814519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce7e87ddfe59%3A0x9c2866062565e6c4!2z0LLRg9C70LjRhtGPINCa0L7Qv9C10YDQvdC40LrQsCwgMTIsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699134548978!5m2!1suk!2sua"
+          width="603"
+          height="595"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
@@ -130,7 +153,7 @@
           </li>
         </ul>
         <a href="" target="_blank">Політика конфіденційності</a>
-        <p>© 2023 Дані захищені</p>
+        <p class="copyright">&copy; 2023 Дані захищені</p>
       </address>
     </footer>
   </body>
